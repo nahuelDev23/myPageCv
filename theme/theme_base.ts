@@ -20,10 +20,10 @@ const themeBase = extendTheme({
   styles: {
     global: (props: any) => ({
       body: {
-        bg: mode("gray.700", "gray.300")(props),
+        bg: mode("gray.300", "gray.700")(props),
       },
       p: {
-        color: mode("#fff", "#000")(props),
+        color: mode("#000", "#fff")(props),
       },
     }),
   },
