@@ -35,6 +35,7 @@ export const AboutMe = () => {
           El mundo del backend le presento un mundo de posibilidades y
           tecnologías para comenzar a aprender.
           <Box as="span" color="green.500" fontWeight="bold">
+            {" "}
             Desde bases de datos relacionales como MariaDB, pasando por patrones
             de diseño hasta el Test Driven Development.
           </Box>
@@ -63,7 +64,7 @@ export const AboutMe = () => {
           <Box as="span" color="green.500" fontWeight="bold">
             Vue.js
           </Box>{" "}
-          fue el elegido en esta nueva aventura ya que Laravel le ofrecía una
+          fue el elegido en esta nueva aventura, ya que Laravel le ofrecía una
           integración sencilla por lo que no tenia que preocuparse por mas nada
           que en comenzar a aprender.
         </Text>
