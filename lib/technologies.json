@@ -1,0 +1,49 @@
+{
+  "areasAndTechnologies": [
+    {
+      "area": "Frontend",
+      "technologies": [
+        {
+          "name": "Typescript"
+        },
+        {
+          "name": "JavaScript (ES6+)"
+        },
+        {
+          "name": "Chakra UI"
+        },
+        {
+          "name": "Tailwind"
+        }
+      ]
+    },
+    {
+      "area": "Backend",
+      "technologies": [
+        {
+          "name": "Node.js"
+        },
+        {
+          "name": "Express"
+        },
+        {
+          "name": "Mongoose"
+        },
+        {
+          "name": "Sequelize"
+        }
+      ]
+    },
+    {
+      "area": "Test",
+      "technologies": [
+        {
+          "name": "React-testing-library"
+        },
+        {
+          "name": "Jest"
+        }
+      ]
+    }
+  ]
+}

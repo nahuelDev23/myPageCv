@@ -27,6 +27,15 @@ const themeBase = extendTheme({
       },
     }),
   },
+  components: {
+    Heading: {
+      sizes: {
+        xxlH3: {
+          fontSize: "2xl",
+        },
+      },
+    },
+  },
 });
 
 export default themeBase;
