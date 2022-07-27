@@ -4,9 +4,9 @@ import { CurrentTecnologiesList } from "../ui/technologies";
 
 export const AboutMe = () => {
   return (
-    <>
-      <Stack mt="4">
-        <Heading>
+    <Stack my="8">
+      <Stack>
+        <Heading as="h2" mb="4">
           <Stack alignItems="baseline" direction="row">
             <Text color="green.500" fontFamily="firaCode" fontWeight="500">
               01.
@@ -80,6 +80,6 @@ export const AboutMe = () => {
       </Stack>
 
       <CurrentTecnologiesList />
-    </>
+    </Stack>
   );
 };

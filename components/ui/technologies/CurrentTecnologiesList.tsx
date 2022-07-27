@@ -9,7 +9,7 @@ export const CurrentTecnologiesList = () => {
   const { areasAndTechnologies } = data;
 
   return (
-    <Stack my="8">
+    <Stack mt="8">
       <Text fontWeight="bold" mb="4">
         Algunas tecnologías con las que he trabajado últimamente
       </Text>

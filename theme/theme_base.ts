@@ -33,6 +33,9 @@ const themeBase = extendTheme({
         xxlH3: {
           fontSize: "2xl",
         },
+        mdH4: {
+          fontSize: "24px",
+        },
       },
     },
   },

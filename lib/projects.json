@@ -1,0 +1,130 @@
+{
+  "projects": [
+    {
+      "title": "Nahue For Sale",
+      "description": "Desarrollo FrontEnd - Es esta web! . La idea principal es que me conozcas mejor y que te ayude a saber si mi perfil te es de utilidad. ",
+      "urlDeploy": "https://nahueforsale.vercel.app/",
+      "urlGit": "https://github.com/nahuelDev23/myPageCv",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "Typescript"
+        },
+        {
+          "name": "Jest"
+        },
+        {
+          "name": "Testing Library"
+        }
+      ]
+    },
+    {
+      "title": "Turnos App",
+      "description": "Desarrollo FullStack - Un  proyecto improvisado que hice con el objetivo de que se me presenten mas situaciones para seguir practicando jest/testing-library ",
+      "urlDeploy": "https://turnos-one.vercel.app/",
+      "urlGit": "https://github.com/nahuelDev23/turnos",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "Typescript"
+        },
+        {
+          "name": "Jest"
+        },
+        {
+          "name": "Testing Library"
+        }
+      ]
+    },
+    {
+      "title": "MileVeggie",
+      "description": "Desarrollo FullStack - Blog de recetas veganas. Este fue mi primer proyecto usando Next.js.En este proyecto tuve la oportunidad de crear un sistema de login usando JWT,hacer un crud completo con paginación e imports dinámicos.",
+      "urlDeploy": "https://mileveggie.com/",
+      "urlGit": "",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "Mongoose"
+        }
+      ]
+    },
+    {
+      "title": "Store-template",
+      "description": "Desarrollo FullStack - Tienda básica, con carrito de compras y checkout mediante WhatsApp. Cuenta con panel administrador completo, implementa SSR,ISR,SSG Las imágenes se guardan en cloudinary haciendo uso de su SDK.Fue la primera app en la que implemente react-testing-library.",
+      "urlDeploy": "https://store-template-kohl.vercel.app",
+      "urlGit": "",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "Mongoose"
+        },
+        {
+          "name": "Motion frame"
+        },
+        {
+          "name": "Typescript"
+        },
+        {
+          "name": "Jest"
+        },
+        {
+          "name": "Testing Library"
+        }
+      ]
+    },
+    {
+      "title": "Coffee MercadoLibre",
+      "description": "Desarrollo FullStack - E-Commerce, con integración del checkout personalizado de MercadoLibre, ademas de implementar el sistema de webHooks donde los estados de las compras se actualizan automáticamente en caso de que la compra haya quedado pendiente y esta se resuelva en días posteriores.",
+      "urlDeploy": "https://tienda-veggie.herokuapp.com/",
+      "urlGit": "",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "Mongoose"
+        }
+      ]
+    },
+    {
+      "title": "NahuelDev Blog",
+      "description": "Desarrollo JAMSTACK - Es mi propio blog donde subo artículos/tutoriales sobre cosas que voy aprendiendo a modo documentación. Este fue el primer proyecto en el que utilice MDX.",
+      "urlDeploy": "https://nahueldevblog.vercel.app/",
+      "urlGit": "",
+      "technologies": [
+        {
+          "name": "Next.js"
+        },
+        {
+          "name": "ChakraUI"
+        },
+        {
+          "name": "MDX"
+        }
+      ]
+    }
+  ]
+}
