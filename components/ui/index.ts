@@ -11,3 +11,5 @@ export * from "./HeadTitle";
 export * from "./Highlighter";
 
 export * from "./codeExample";
+
+export * from "./Carousel";

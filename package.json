@@ -17,6 +17,7 @@
     "@fontsource/fira-code": "^4.5.10",
     "@fontsource/inconsolata": "^4.5.6",
     "@fontsource/raleway": "^4.5.9",
+    "embla-carousel-react": "^7.0.0-rc05",
     "firacode": "^6.2.0",
     "framer-motion": "^6.4.2",
     "next": "12.2.0",

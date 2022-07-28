@@ -1,15 +1,19 @@
 import { Grid, Stack, Text } from "@chakra-ui/react";
+import useEmblaCarousel from "embla-carousel-react";
 
-import { Highlighter, CodeExample } from "../ui";
+import { Highlighter, Carousel } from "../ui";
 import { HeadTitle } from "../ui/HeadTitle";
+import { slidesCode } from "../ui/codeExample/codeExampleText";
 
 export const Present = () => {
+  const [viewportRef, emblaApi] = useEmblaCarousel();
+
   return (
     <Stack my="8">
       <HeadTitle number="04" title="Qué estoy haciendo en la actualidad?" />
       <Grid
         gap="8"
-        gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "50% 50%" }}
+        gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "40% 60%" }}
       >
         <Stack>
           <Text>
@@ -34,7 +38,7 @@ export const Present = () => {
           </Text>
         </Stack>
         <Stack>
-          <CodeExample />
+          <Carousel slidesCode={slidesCode} viewportRef={viewportRef} />
         </Stack>
       </Grid>
     </Stack>
