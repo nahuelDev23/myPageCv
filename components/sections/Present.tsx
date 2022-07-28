@@ -11,6 +11,7 @@ export const Present = () => {
       <Grid
         gap="8"
         gridTemplateColumns={{ base: "repeat(1,1fr)", lg: "40% 60%" }}
+        overflow="hidden"
       >
         <Stack>
           <Text>
