@@ -11,13 +11,7 @@ export class Pokemon {
   const { data } = await axios.get<PokeapiResponse>(url);
   return data.moves;
   }
-
 }
-
-export const charmander = new Pokemon( 4, 'Charmander' );
-
-charmander.getMoves();
-
 `;
 
 const goodCode = `// better
@@ -35,17 +29,28 @@ async getMoves(): Promise < Move[] > {
   return data.moves;
  }
 }
+`;
 
+const caseUse = `
+// before
+export const charmander = new Pokemon( 4, 'Charmander' );
+charmander.getMoves();
+
+// after
 const pokeApiAxios = new PokeApiAdapter();
 const pokeApiFetch = new PokeApiFetchAdapter();
 
 export const charmander = new Pokemon(
-    4, 
-    'Charmander',
-    pokeApiAxios);
+  4, 
+  'Charmander',
+  pokeApiAxios);
 
 charmander.getMoves();
 
 `;
 
-export const slidesCode = [{ code: badCode }, { code: goodCode }];
+export const slidesCode = [
+  { code: badCode },
+  { code: goodCode },
+  { code: caseUse },
+];
