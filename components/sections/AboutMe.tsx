@@ -1,19 +1,13 @@
-import { Box, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 
+import { HeadTitle } from "../ui";
 import { CurrentTecnologiesList } from "../ui/technologies";
 
 export const AboutMe = () => {
   return (
     <Stack my="8">
       <Stack>
-        <Heading as="h2" mb="4">
-          <Stack alignItems="baseline" direction="row">
-            <Text color="green.500" fontFamily="firaCode" fontWeight="500">
-              01.
-            </Text>
-            <Text fontFamily="paraph">Quien es Nahuel? </Text>
-          </Stack>
-        </Heading>
+        <HeadTitle number="01" title="Quién es Nahuel? " />
 
         <Text>Es un muchacho apasionado por el desarrollo web.</Text>
 

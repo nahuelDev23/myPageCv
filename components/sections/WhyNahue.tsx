@@ -1,16 +1,11 @@
 import { Grid, Heading, Stack, Text } from "@chakra-ui/react";
 
+import { HeadTitle } from "../ui";
+
 export const WhyNahue = () => {
   return (
     <Stack my="8">
-      <Heading as="h2" mb="4">
-        <Stack alignItems="baseline" direction="row">
-          <Text color="green.500" fontFamily="firaCode" fontWeight="500">
-            02.
-          </Text>
-          <Text fontFamily="paraph">Por qué es bueno trabajar con Nahue? </Text>
-        </Stack>
-      </Heading>
+      <HeadTitle number="02" title="Por qué es bueno trabajar con Nahue?" />
       <Grid
         gap="8"
         gridTemplateColumns={{ base: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
