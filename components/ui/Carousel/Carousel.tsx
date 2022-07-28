@@ -1,32 +1,43 @@
-import { Box } from "@chakra-ui/react";
-import { EmblaOptionsType } from "embla-carousel-react";
+import { Stack } from "@chakra-ui/react";
+import useEmblaCarousel from "embla-carousel-react";
 
 import { CodeExample } from "../codeExample";
 
-import style from "./carousel.module.css";
+import { PaginateCarousel } from "./PaginateCarousel";
 
-type PropType = {
-  options?: EmblaOptionsType;
-  slidesCode: any;
-  viewportRef: any;
-};
+interface slideCodeProperties {
+  code: string;
+}
+interface Props {
+  slidesCode: slideCodeProperties[];
+}
 
-export const Carousel = (props: PropType) => {
-  const { slidesCode, viewportRef } = props;
+interface TypeOfCodeExample {
+  code: string;
+}
+
+export const Carousel = ({ slidesCode }: Props) => {
+  const [viewportRef, emblaApi] = useEmblaCarousel();
 
   return (
     <>
-      <div ref={viewportRef} className={style.embla}>
-        <Box className={style.embla__container}>
-          {slidesCode.map(
-            (typeOfCodeExample: { code: string }, index: number) => (
-              <Box key={index} className={style.embla__slide}>
-                <CodeExample code={typeOfCodeExample.code} />
-              </Box>
-            ),
-          )}
-        </Box>
-      </div>
+      <Stack ref={viewportRef} maxW="100vw" overflow="hidden">
+        <Stack direction="row">
+          {slidesCode.map(({ code }: TypeOfCodeExample, index: number) => (
+            <Stack
+              key={index}
+              flexBasis="100%"
+              flexGrow="0"
+              flexShrink="0"
+              maxWidth="100%"
+              ml="10px"
+            >
+              <CodeExample code={code} />
+            </Stack>
+          ))}
+        </Stack>
+      </Stack>
+      <PaginateCarousel emblaApi={emblaApi} slides={slidesCode} />
     </>
   );
 };

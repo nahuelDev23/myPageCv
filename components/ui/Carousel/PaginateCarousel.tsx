@@ -1,25 +1,12 @@
 import { FC, useCallback, useEffect, useState } from "react";
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 
-import style from "./carousel.module.css";
-
-interface DotButtonProps {
-  selected: boolean;
-  onClick: () => void;
-}
+import { DotButton } from "./DotButton";
 
 interface Props {
   slides: any;
   emblaApi: any;
 }
-
-const DotButton: FC<DotButtonProps> = ({ selected, onClick }) => (
-  <button
-    className={`${style.embla__dot} ${selected ? style.isSelected : ""}`}
-    type="button"
-    onClick={onClick}
-  />
-);
 
 export const PaginateCarousel: FC<Props> = ({ slides, emblaApi }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -43,7 +30,7 @@ export const PaginateCarousel: FC<Props> = ({ slides, emblaApi }) => {
 
   return (
     <Flex justifyContent="center" mt="8">
-      <Box className={style.embla__dots}>
+      <Stack direction="row">
         {slides.map((_: any, index: number) => (
           <DotButton
             key={`${index}`}
@@ -51,7 +38,7 @@ export const PaginateCarousel: FC<Props> = ({ slides, emblaApi }) => {
             onClick={() => scrollTo(index)}
           />
         ))}
-      </Box>
+      </Stack>
     </Flex>
   );
 };
