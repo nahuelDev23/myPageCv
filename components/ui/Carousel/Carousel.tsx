@@ -3,7 +3,7 @@ import { EmblaOptionsType } from "embla-carousel-react";
 
 import { CodeExample } from "../codeExample";
 
-import s from "./carousel.module.css";
+import style from "./carousel.module.css";
 
 type PropType = {
   options?: EmblaOptionsType;
@@ -16,11 +16,11 @@ export const Carousel = (props: PropType) => {
 
   return (
     <>
-      <div ref={viewportRef} className={s.embla}>
-        <Box className={s.embla__container}>
+      <div ref={viewportRef} className={style.embla}>
+        <Box className={style.embla__container}>
           {slidesCode.map(
             (typeOfCodeExample: { code: string }, index: number) => (
-              <Box key={index} className={s.embla__slide}>
+              <Box key={index} className={style.embla__slide}>
                 <CodeExample code={typeOfCodeExample.code} />
               </Box>
             ),

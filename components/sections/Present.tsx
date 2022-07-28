@@ -1,7 +1,7 @@
 import { Grid, Stack, Text } from "@chakra-ui/react";
 import useEmblaCarousel from "embla-carousel-react";
 
-import { Highlighter, Carousel } from "../ui";
+import { Highlighter, Carousel, PaginateCarousel } from "../ui";
 import { HeadTitle } from "../ui/HeadTitle";
 import { slidesCode } from "../ui/codeExample/codeExampleText";
 
@@ -39,6 +39,7 @@ export const Present = () => {
         </Stack>
         <Stack>
           <Carousel slidesCode={slidesCode} viewportRef={viewportRef} />
+          <PaginateCarousel emblaApi={emblaApi} slides={slidesCode} />
         </Stack>
       </Grid>
     </Stack>
