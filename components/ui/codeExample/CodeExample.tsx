@@ -1,13 +1,12 @@
-import Image from "next/image";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+
+import { goodCode } from "./codeExampleText";
 
 export const CodeExample = () => {
   return (
-    <Image
-      height="100%"
-      layout="responsive"
-      objectFit="cover"
-      src="/assets/bad_code.png"
-      width="100%"
-    />
+    <SyntaxHighlighter language="javascript" style={dark}>
+      {goodCode}
+    </SyntaxHighlighter>
   );
 };

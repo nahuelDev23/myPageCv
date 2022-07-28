@@ -8,7 +8,8 @@ export const Present = () => {
     <Stack my="8">
       <HeadTitle number="04" title="Qué estoy haciendo en la actualidad?" />
       <Grid
-        gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "repeat(2,1fr)" }}
+        gap="8"
+        gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "50% 50%" }}
       >
         <Stack>
           <Text>
