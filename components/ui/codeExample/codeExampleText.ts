@@ -7,14 +7,20 @@ export class Pokemon {
   ) {}
 
  async getMoves(): Promise<Move[]> {
-  const url = \`https://pokeapi.co/api/v2/pokemon/\${id}\`
-  const { data } = await axios.get<PokeapiResponse>(url);
+  const url = 
+    \`https://pokeapi.co/api/v2/pokemon/\${id}\`
+  const { data } =
+     await axios.get<PokeapiResponse>(url);
+     
   return data.moves;
   }
 
 }
 
-export const charmander = new Pokemon( 4, 'Charmander' );
+export const charmander = 
+new Pokemon( 
+    4, 
+    'Charmander' );
 
 charmander.getMoves();
 
@@ -30,16 +36,22 @@ export class Pokemon {
 ) { }
 
 async getMoves(): Promise < Move[] > {
-  const url = \`https://pokeapi.co/api/v2/pokemon/\${id}\`
-  const data = await this.http.get<PokeapiReponse>(url);
+  const url = 
+    \`https://pokeapi.co/api/v2/pokemon/\${id}\`
+  const data = 
+    await this.http.get<PokeapiReponse>(url);
+
   return data.moves;
  }
 }
 
-const pokeApiAxios = new PokeApiAdapter();
-const pokeApiFetch = new PokeApiFetchAdapter();
+const pokeApiAxios = 
+    new PokeApiAdapter();
+const pokeApiFetch = 
+    new PokeApiFetchAdapter();
 
-export const charmander = new Pokemon(
+export const charmander = 
+    new Pokemon(
     4, 
     'Charmander',
     pokeApiAxios);
