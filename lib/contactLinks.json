@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "url": "https://nahueldevblog.vercel.app",
+      "socialIcon": "github"
+    },
+    {
+      "url": "https://nahueldevblog.vercel.app",
+      "socialIcon": "instagram"
+    },
+    {
+      "url": "https://nahueldevblog.vercel.app",
+      "socialIcon": "linkedin"
+    },
+    {
+      "url": "https://nahueldevblog.vercel.app",
+      "socialIcon": "web"
+    }
+  ]
+}

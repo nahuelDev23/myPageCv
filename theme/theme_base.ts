@@ -5,10 +5,11 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
+export const primaryColor = "#64ffda";
 const themeBase = extendTheme({
   colors: {
     green: {
-      500: "#64ffda",
+      500: primaryColor,
     },
   },
   fonts: {

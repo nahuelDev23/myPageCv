@@ -13,3 +13,5 @@ export * from "./Highlighter";
 export * from "./codeExample";
 
 export * from "./Carousel";
+
+export * from "./footer";

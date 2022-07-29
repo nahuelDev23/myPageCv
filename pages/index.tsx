@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 
 import { PublicLayout } from "../components/Layout/PublicLayout";
 import { AboutMe, Present, WhyNahue, Works } from "../components/sections";
+import { Footer } from "../components/sections/Footer";
 import { DividerPhrases } from "../components/ui";
 // import { DarkModeButton } from "../components/ui/DarkModeButton";
 
@@ -25,6 +26,11 @@ const Home: NextPage = () => {
         phrase="Programar es el arte de decirle a otro humano lo que quieres que la computadora haga"
       />
       <Present />
+      <DividerPhrases
+        author="Robert C. Martin"
+        phrase="Los clientes no deberían estar obligados a depender de interfaces que no utilicen"
+      />
+      <Footer />
     </PublicLayout>
   );
 };
