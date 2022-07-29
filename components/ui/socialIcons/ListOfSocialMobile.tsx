@@ -22,7 +22,7 @@ const icon: Icon = {
   web: <AiOutlineChrome aria-label="svg" size="32px" />,
 };
 
-export const ListOfPlatforms = () => {
+export const ListOfSocialMobile = () => {
   return (
     <Stack direction="row" display={{ base: "flex", xl: "none" }}>
       <UnorderedList

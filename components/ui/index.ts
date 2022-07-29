@@ -14,4 +14,4 @@ export * from "./codeExample";
 
 export * from "./Carousel";
 
-export * from "./footer";
+export * from "./socialIcons";
