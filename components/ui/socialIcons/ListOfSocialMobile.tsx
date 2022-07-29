@@ -10,6 +10,7 @@ import { ReactNode } from "react";
 import { links } from "../../../lib/contactLinks.json";
 
 import { ItemOfList } from "./ItemOfList";
+import { ItemOfListContainer } from "./ItemOfListContainer";
 
 interface Icon {
   [nameOfIcon: string]: ReactNode;
@@ -34,9 +35,11 @@ export const ListOfSocialMobile = () => {
         w="100%"
       >
         {links.map(({ socialIcon, url }) => (
-          <ItemOfList key={socialIcon} url={url}>
-            {icon[socialIcon]}
-          </ItemOfList>
+          <ItemOfListContainer
+            key={socialIcon}
+            socialIcon={socialIcon}
+            url={url}
+          />
         ))}
       </UnorderedList>
     </Stack>

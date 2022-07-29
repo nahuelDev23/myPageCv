@@ -1,25 +1,8 @@
 import { Center, Divider, Stack, UnorderedList } from "@chakra-ui/react";
-import { ReactNode } from "react";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiOutlineChrome,
-} from "react-icons/ai";
 
 import { links } from "../../../lib/contactLinks.json";
 
-import { ItemOfList } from "./ItemOfList";
-
-interface Icon {
-  [nameOfIcon: string]: ReactNode;
-}
-const icon: Icon = {
-  github: <AiFillGithub aria-label="svg" size="32px" />,
-  linkedin: <AiFillLinkedin aria-label="svg" size="32px" />,
-  instagram: <AiFillInstagram aria-label="svg" size="32px" />,
-  web: <AiOutlineChrome aria-label="svg" size="32px" />,
-};
+import { ItemOfListContainer } from "./ItemOfListContainer";
 
 export const ListOfSocialDesktop = () => {
   return (
@@ -43,9 +26,11 @@ export const ListOfSocialDesktop = () => {
         w="100%"
       >
         {links.map(({ socialIcon, url }) => (
-          <ItemOfList key={socialIcon} url={url}>
-            {icon[socialIcon]}
-          </ItemOfList>
+          <ItemOfListContainer
+            key={socialIcon}
+            socialIcon={socialIcon}
+            url={url}
+          />
         ))}
       </UnorderedList>
       <Center height="150px">
