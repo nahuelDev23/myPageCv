@@ -1,4 +1,4 @@
-import { ListItem } from "@chakra-ui/react";
+import { Link, ListItem } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 
 import { primaryColor } from "../../../theme/theme_base";
@@ -9,27 +9,24 @@ interface Props {
 }
 
 export const ItemOfList: FC<Props> = ({ children, url }) => {
-  const mouseOut = ({ target }: any) => {
-    return (
-      (target.style.color = "rgba(255, 255, 255, 0.92)"),
-      (target.style.transition = "all .2s linear"),
-      (target.style.transform = "translateY(0px)")
-    );
-  };
-
-  const mouseOver = ({ target }: any) => {
-    return (
-      (target.style.color = primaryColor),
-      (target.style.transition = "all .2s linear"),
-      (target.style.transform = "translateY(-5px)")
-    );
-  };
-
   return (
-    <ListItem onMouseOut={mouseOut} onMouseOver={mouseOver}>
-      <a href={url} rel="noreferrer" target="_blank">
+    <ListItem
+      _hover={{
+        transform: "translateY(-4px)",
+      }}
+      transition=".2s all linear"
+    >
+      <Link
+        _hover={{
+          color: primaryColor,
+        }}
+        href={url}
+        rel="noreferrer"
+        target="_blank"
+        transition=".4s all linear"
+      >
         {children}
-      </a>
+      </Link>
     </ListItem>
   );
 };

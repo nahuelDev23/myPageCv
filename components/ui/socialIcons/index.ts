@@ -2,4 +2,4 @@ export * from "./ItemOfList";
 
 export * from "./ListOfSocialMobile";
 
-export * from "./ListOfSocialMobileDesktop";
+export * from "./ListOfSocialDesktop";
