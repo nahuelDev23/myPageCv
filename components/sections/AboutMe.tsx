@@ -1,6 +1,6 @@
 import { Box, Stack, Text } from "@chakra-ui/react";
 
-import { HeadTitle } from "../ui";
+import { HeadTitle, Highlighter } from "../ui";
 import { CurrentTecnologiesList } from "../ui/technologies";
 
 export const AboutMe = () => {
@@ -17,22 +17,18 @@ export const AboutMe = () => {
         </Text>
 
         <Text>
-          <Box as="span" color="green.500" fontWeight="bold">
-            Con perfil más orientado al fullstack
-          </Box>
-          , dio sus primeros pasos hacia el backend de la mano de PHP, luego
-          conoció el mundo de los frameworks, siendo Laravel el primero en ser
-          aprendido.
+          <Highlighter text="Con perfil más orientado al fullstack" />, dio sus
+          primeros pasos hacia el backend de la mano de PHP, luego conoció el
+          mundo de los frameworks, siendo Laravel el primero en ser aprendido.
         </Text>
 
         <Text>
           El mundo del backend le presento un mundo de posibilidades y
           tecnologías para comenzar a aprender.
-          <Box as="span" color="green.500" fontWeight="bold">
-            {" "}
-            Desde bases de datos relacionales como MariaDB, pasando por patrones
-            de diseño hasta el Test Driven Development.
-          </Box>
+          <Highlighter
+            text=" Desde bases de datos relacionales como MariaDB, pasando por patrones
+            de diseño hasta el Test Driven Development."
+          />
         </Text>
 
         <Text>
@@ -41,10 +37,7 @@ export const AboutMe = () => {
         </Text>
 
         <Text>
-          Los viejos confiables{" "}
-          <Box as="span" color="green.500" fontWeight="bold">
-            HTML,CSS Y Javascript{" "}
-          </Box>
+          Los viejos confiables <Highlighter text="  HTML,CSS Y Javascript " />
           serian quienes lo iniciarían en este maravilloso mundo lleno de
           estilos,colores e interactividad.
         </Text>
@@ -55,9 +48,7 @@ export const AboutMe = () => {
         </Text>
 
         <Text>
-          <Box as="span" color="green.500" fontWeight="bold">
-            Vue.js
-          </Box>{" "}
+          <Highlighter text="Vue.js " />
           fue el elegido en esta nueva aventura, ya que Laravel le ofrecía una
           integración sencilla por lo que no tenia que preocuparse por mas nada
           que en comenzar a aprender.
@@ -65,9 +56,7 @@ export const AboutMe = () => {
 
         <Text>
           Finalmente tras un largo recorrido llegamos al 2021{" "}
-          <Box as="span" color="green.500" fontWeight="bold">
-            donde decidió cambiar todo su stack a MERN
-          </Box>{" "}
+          <Highlighter text="donde decidió cambiar todo su stack a MERN " />
           del cual se enamoro y continua hasta el dia de hoy sumando conceptos e
           intentando mejorar dia tras dia!
         </Text>
