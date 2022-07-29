@@ -26,6 +26,7 @@ export const Carousel = ({ slidesCode }: Props) => {
           {slidesCode.map(({ code }: TypeOfCodeExample, index: number) => (
             <Stack
               key={index}
+              aria-label="slidesCode"
               flexBasis="100%"
               flexGrow="0"
               flexShrink="0"

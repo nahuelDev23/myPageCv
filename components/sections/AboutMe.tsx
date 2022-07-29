@@ -1,4 +1,4 @@
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Stack, Text } from "@chakra-ui/react";
 
 import { HeadTitle, Highlighter } from "../ui";
 import { CurrentTecnologiesList } from "../ui/technologies";
