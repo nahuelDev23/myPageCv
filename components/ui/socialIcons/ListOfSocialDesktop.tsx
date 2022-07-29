@@ -21,7 +21,7 @@ const icon: Icon = {
   web: <AiOutlineChrome aria-label="svg" size="32px" />,
 };
 
-export const ListOfSocialMobileDesktop = () => {
+export const ListOfSocialDesktop = () => {
   return (
     <Stack
       alignItems="center"

@@ -2,7 +2,7 @@ import { Container, Stack } from "@chakra-ui/react";
 import React, { FC } from "react";
 
 import { IMetadata } from "../../interface";
-import { ListOfSocialMobileDesktop } from "../ui";
+import { ListOfSocialDesktop } from "../ui";
 
 import { HeadComponent } from "./HeadComponent";
 
@@ -18,7 +18,7 @@ export const PublicLayout: FC<Props> = ({ children, metadata }) => {
         <HeadComponent metadata={metadata} />
         {children}
       </Container>
-      <ListOfSocialMobileDesktop />
+      <ListOfSocialDesktop />
     </Stack>
   );
 };
