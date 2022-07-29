@@ -1,27 +1,8 @@
 import { Stack, UnorderedList } from "@chakra-ui/react";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiOutlineChrome,
-} from "react-icons/ai";
-import { ReactNode } from "react";
 
 import { links } from "../../../lib/contactLinks.json";
 
-import { ItemOfList } from "./ItemOfList";
 import { ItemOfListContainer } from "./ItemOfListContainer";
-
-interface Icon {
-  [nameOfIcon: string]: ReactNode;
-}
-
-const icon: Icon = {
-  github: <AiFillGithub aria-label="svg" size="32px" />,
-  linkedin: <AiFillLinkedin aria-label="svg" size="32px" />,
-  instagram: <AiFillInstagram aria-label="svg" size="32px" />,
-  web: <AiOutlineChrome aria-label="svg" size="32px" />,
-};
 
 export const ListOfSocialMobile = () => {
   return (
