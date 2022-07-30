@@ -15,3 +15,7 @@ export * from "./codeExample";
 export * from "./Carousel";
 
 export * from "./socialIcons";
+
+export * from "./MyPhoto";
+
+export * from "./navBar";

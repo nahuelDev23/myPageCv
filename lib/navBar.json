@@ -1,0 +1,24 @@
+{
+  "nav": [
+    {
+      "url": "about",
+      "number": "01.",
+      "text": "Sobre Mi"
+    },
+    {
+      "url": "why",
+      "number": "02.",
+      "text": "Por qué?"
+    },
+    {
+      "url": "works",
+      "number": "03.",
+      "text": "Proyectos"
+    },
+    {
+      "url": "present",
+      "number": "04.",
+      "text": "Actualidad"
+    }
+  ]
+}

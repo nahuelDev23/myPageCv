@@ -1,12 +1,16 @@
 import { Grid, Stack, Text } from "@chakra-ui/react";
+import { useContext } from "react";
 
 import { Highlighter, Carousel } from "../ui";
 import { HeadTitle } from "../ui/HeadTitle";
 import { slidesCode } from "../ui/codeExample/codeExampleText";
+import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
 
 export const Present = () => {
+  const { scrollToPresent } = useContext(ScrollToContext);
+
   return (
-    <Stack my="8">
+    <Stack ref={scrollToPresent} my="8">
       <HeadTitle number="04" title="Qué estoy haciendo en la actualidad?" />
       <Grid
         gap="8"

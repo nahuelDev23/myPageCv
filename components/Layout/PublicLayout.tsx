@@ -3,6 +3,7 @@ import React, { FC } from "react";
 
 import { IMetadata } from "../../interface";
 import { ListOfSocialDesktop } from "../ui";
+import { NavBar } from "../ui/";
 
 import { HeadComponent } from "./HeadComponent";
 
@@ -16,6 +17,7 @@ export const PublicLayout: FC<Props> = ({ children, metadata }) => {
     <Stack>
       <Container maxWidth="container.lg" position="relative">
         <HeadComponent metadata={metadata} />
+        <NavBar />
         {children}
       </Container>
       <ListOfSocialDesktop />

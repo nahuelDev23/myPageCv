@@ -54,3 +54,42 @@ export const slidesCode = [
   { code: goodCode },
   { code: caseUse },
 ];
+
+const badAngGoodNamesArray = `
+//bad
+const fruit = ['manzana', 'plátano', 'fresa'];
+// regular
+const fruitList = ['manzana', 'plátano', 'fresa'];
+// good
+const fruits = ['manzana', 'plátano', 'fresa'];
+// better
+const fruitNames = ['manzana', 'plátano', 'fresa'];
+`;
+
+const badAngGoodNamesBooleans = `
+//bad
+const open = true;
+const write = true;
+const fruit = true;
+
+// good
+const isOpen = true;
+const canWrite = true;
+const hasFruit = true;
+`;
+
+const badAndGoodNamesNumber = `
+//bad
+const fruits = 3;
+
+//better
+const maxFruits = 5;
+const minFruits = 1;
+const totalFruits = 3;
+`;
+
+export const slideCodeVariables = [
+  { code: badAngGoodNamesArray },
+  { code: badAngGoodNamesBooleans },
+  { code: badAndGoodNamesNumber },
+];

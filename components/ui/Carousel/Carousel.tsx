@@ -16,6 +16,7 @@ interface TypeOfCodeExample {
   code: string;
 }
 
+// code por fuera
 export const Carousel = ({ slidesCode }: Props) => {
   const [viewportRef, emblaApi] = useEmblaCarousel();
 
