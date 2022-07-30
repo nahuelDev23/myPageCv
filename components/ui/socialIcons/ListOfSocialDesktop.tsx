@@ -1,10 +1,12 @@
 import { Center, Divider, Stack, UnorderedList } from "@chakra-ui/react";
 
-import { links } from "../../../lib/contactLinks.json";
+import * as contactLinks from "../../../lib/contactLinks.json";
 
 import { ItemOfListContainer } from "./ItemOfListContainer";
 
 export const ListOfSocialDesktop = () => {
+  const { links } = contactLinks;
+
   return (
     <Stack
       alignItems="center"

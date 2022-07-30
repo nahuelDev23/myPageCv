@@ -1,10 +1,12 @@
 import { Grid } from "@chakra-ui/react";
 
-import { projects } from "../../../lib/projects.json";
+import * as projectsList from "../../../lib/projects.json";
 
 import { ProjectBox } from "./ProjectBox";
 
 export const Projects = () => {
+  const { projects } = projectsList;
+
   return (
     <div>
       <Grid

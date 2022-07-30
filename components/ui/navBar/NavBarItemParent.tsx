@@ -2,7 +2,7 @@ import { ListItem } from "@chakra-ui/react";
 import { useContext } from "react";
 
 import { ScrollToContext } from "../../../context";
-import { nav } from "../../../lib/navBar.json";
+import * as navBar from "../../../lib/navBar.json";
 
 import { ItemNavBar } from "./ItemNavBar";
 
@@ -16,7 +16,7 @@ interface NavAction {
 export const NavBarItemParent = () => {
   const { goToPresent, goToAboutMe, goToWhyNahue, goToWorks } =
     useContext(ScrollToContext);
-
+  const { nav } = navBar;
   const navAction: NavAction = {
     about: goToAboutMe,
     why: goToWhyNahue,

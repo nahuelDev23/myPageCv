@@ -1,10 +1,12 @@
 import { Stack, UnorderedList } from "@chakra-ui/react";
 
-import { links } from "../../../lib/contactLinks.json";
+import * as contactLinks from "../../../lib/contactLinks.json";
 
 import { ItemOfListContainer } from "./ItemOfListContainer";
 
 export const ListOfSocialMobile = () => {
+  const { links } = contactLinks;
+
   return (
     <Stack direction="row" display={{ base: "flex", xl: "none" }}>
       <UnorderedList
