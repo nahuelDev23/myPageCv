@@ -1,5 +1,5 @@
 import { ListItem } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import { ScrollToContext } from "../../../context";
 import { nav } from "../../../lib/navBar.json";
