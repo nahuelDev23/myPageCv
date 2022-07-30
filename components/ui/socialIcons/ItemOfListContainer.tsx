@@ -18,7 +18,6 @@ const icon: Icon = {
   web: <FiChrome aria-label="svg" size="32px" />,
 };
 
-// todo hacer test
 export const ItemOfListContainer = ({ url, socialIcon }: Props) => {
   return <ItemOfList url={url}>{icon[socialIcon]}</ItemOfList>;
 };
