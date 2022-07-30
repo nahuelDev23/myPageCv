@@ -1,3 +1,5 @@
+import { Box } from "@chakra-ui/react";
+
 import { Highlighter } from "../Highlighter";
 
 interface Props {
@@ -8,9 +10,9 @@ interface Props {
 
 export const ItemNavBar = ({ goTo, number, text }: Props) => {
   return (
-    <a onClick={goTo}>
+    <Box cursor="pointer" onClick={goTo}>
       <Highlighter fontFamily="firaCode" text={number} />
       {text}
-    </a>
+    </Box>
   );
 };
