@@ -2,13 +2,14 @@ import { Grid, Heading, Stack, Text } from "@chakra-ui/react";
 import { useContext } from "react";
 
 import { ScrollToContext } from "../../context";
+import { SectionLayout } from "../Layout";
 import { HeadTitle } from "../ui";
 
 export const WhyNahue = () => {
   const { scrollToWhyNahue } = useContext(ScrollToContext);
 
   return (
-    <Stack ref={scrollToWhyNahue} my="8">
+    <SectionLayout reference={scrollToWhyNahue}>
       <HeadTitle number="02" title="Por qué es bueno trabajar con Nahue?" />
       <Grid
         gap="8"
@@ -50,6 +51,6 @@ export const WhyNahue = () => {
           </Text>
         </Stack>
       </Grid>
-    </Stack>
+    </SectionLayout>
   );
 };

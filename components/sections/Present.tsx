@@ -5,12 +5,13 @@ import { Highlighter, Carousel } from "../ui";
 import { HeadTitle } from "../ui/HeadTitle";
 import { slidesCode } from "../ui/codeExample/codeExampleText";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
+import { SectionLayout } from "../Layout";
 
 export const Present = () => {
   const { scrollToPresent } = useContext(ScrollToContext);
 
   return (
-    <Stack ref={scrollToPresent} my="8">
+    <SectionLayout reference={scrollToPresent}>
       <HeadTitle number="04" title="Qué estoy haciendo en la actualidad?" />
       <Grid
         gap="8"
@@ -43,6 +44,6 @@ export const Present = () => {
           <Carousel slidesCode={slidesCode} />
         </Stack>
       </Grid>
-    </Stack>
+    </SectionLayout>
   );
 };

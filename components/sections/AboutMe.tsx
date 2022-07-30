@@ -5,12 +5,13 @@ import { HeadTitle, Highlighter } from "../ui";
 import { MyPhoto } from "../ui/";
 import { CurrentTecnologiesList } from "../ui/technologies";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
+import { SectionLayout } from "../Layout";
 
 export const AboutMe = () => {
   const { scrollToAboutMe } = useContext(ScrollToContext);
 
   return (
-    <Stack ref={scrollToAboutMe} my="8">
+    <SectionLayout reference={scrollToAboutMe}>
       <HeadTitle number="01" title="Quién es Nahuel? " />
       <Grid
         gap="8"
@@ -80,6 +81,6 @@ export const AboutMe = () => {
           <MyPhoto />
         </Stack>
       </Grid>
-    </Stack>
+    </SectionLayout>
   );
 };

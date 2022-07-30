@@ -6,6 +6,8 @@ const config: ThemeConfig = {
 };
 
 export const primaryColor = "#64ffda";
+
+export const secondaryDarkColor = "gray.700";
 const themeBase = extendTheme({
   colors: {
     green: {
@@ -21,7 +23,7 @@ const themeBase = extendTheme({
   styles: {
     global: (props: any) => ({
       body: {
-        bg: mode("gray.300", "gray.700")(props),
+        bg: mode("gray.300", secondaryDarkColor)(props),
       },
       p: {
         color: mode("#000", "#fff")(props),
