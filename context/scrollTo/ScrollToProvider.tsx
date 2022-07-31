@@ -1,16 +1,11 @@
 import { FC, ReactNode, useRef } from "react";
 
+import { scrollAdapter } from "../../services";
+
 import { ScrollToContext } from "./ScrollToContext";
 
 interface Props {
   children: ReactNode;
-}
-interface ScrollIntoView {
-  behavior: string;
-}
-
-interface Generic {
-  scrollIntoView: ({ behavior }: ScrollIntoView) => void;
 }
 
 export const ScrollToProvider: FC<Props> = ({ children }) => {
@@ -19,29 +14,20 @@ export const ScrollToProvider: FC<Props> = ({ children }) => {
   const scrollToWorks = useRef();
   const scrollToPresent = useRef();
 
-  // todo adapter scrollIntoView
   const goToAboutMe = () => {
-    (scrollToAboutMe.current! as Generic).scrollIntoView({
-      behavior: "smooth",
-    });
+    scrollAdapter(scrollToAboutMe);
   };
 
   const goToWhyNahue = () => {
-    (scrollToWhyNahue.current! as Generic).scrollIntoView({
-      behavior: "smooth",
-    });
+    scrollAdapter(scrollToWhyNahue);
   };
 
   const goToWorks = () => {
-    (scrollToWorks.current! as Generic).scrollIntoView({
-      behavior: "smooth",
-    });
+    scrollAdapter(scrollToWorks);
   };
 
   const goToPresent = () => {
-    (scrollToPresent.current! as Generic).scrollIntoView({
-      behavior: "smooth",
-    });
+    scrollAdapter(scrollToPresent);
   };
 
   return (
