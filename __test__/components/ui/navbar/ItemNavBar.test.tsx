@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 
 import { ItemNavBar } from "../../../../components/ui/navBar/ItemNavBar";
-import { ScrollToContext } from "../../../../context";
 
 describe("Test ItemNavBar", () => {
   const goTo = jest.fn();
