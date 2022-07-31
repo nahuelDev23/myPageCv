@@ -2,16 +2,10 @@ import { ListItem } from "@chakra-ui/react";
 import { useContext } from "react";
 
 import { ScrollToContext } from "../../../context";
+import { NavAction } from "../../../interface";
 import * as navBar from "../../../lib/navBar.json";
 
 import { ItemNavBar } from "./ItemNavBar";
-
-interface NavAction {
-  about: () => void;
-  why: () => void;
-  works: () => void;
-  present: () => void;
-}
 
 export const NavBarItemParent = () => {
   const { goToPresent, goToAboutMe, goToWhyNahue, goToWorks } =
