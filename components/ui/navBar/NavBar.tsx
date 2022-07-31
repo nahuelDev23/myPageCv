@@ -9,10 +9,10 @@ export const NavBar = () => {
   return (
     <Stack
       bgColor={secondaryDarkColor}
-      position="sticky"
+      position={{ base: "inherit", sm: "sticky" }}
       py="8"
       top="0"
-      zIndex="popover"
+      zIndex="modal"
     >
       <Stack alignItems="center" flexDir="row" justifyContent="space-between">
         <Stack>
