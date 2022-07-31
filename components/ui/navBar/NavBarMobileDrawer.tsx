@@ -15,8 +15,8 @@ interface Props {
 
 export const NavBarMobileDrawer = ({ isOpen, onClose }: Props) => {
   return (
-    <Drawer isOpen={isOpen} size="xs" onClose={onClose}>
-      <DrawerContent pt="8">
+    <Drawer isOpen={isOpen} placement="bottom" size="xs" onClose={onClose}>
+      <DrawerContent py="8">
         <DrawerCloseButton aria-label="closeDrawer" />
         <DrawerBody>
           <UnorderedList
