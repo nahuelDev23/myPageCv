@@ -22,7 +22,7 @@ export const Carousel = ({ slidesCode }: Props) => {
 
   return (
     <>
-      <Stack ref={viewportRef} maxW="100vw" overflow="hidden">
+      <Stack ref={viewportRef} maxW="100%">
         <Stack direction="row">
           {slidesCode.map(({ code }: TypeOfCodeExample, index: number) => (
             <Stack
