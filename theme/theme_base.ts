@@ -8,6 +8,8 @@ const config: ThemeConfig = {
 export const primaryColor = "#64ffda";
 
 export const secondaryDarkColor = "gray.700";
+
+export const navyShadow = "rgba(2,12,27,0.7)";
 const themeBase = extendTheme({
   colors: {
     green: {
