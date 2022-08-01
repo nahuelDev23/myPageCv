@@ -6,13 +6,16 @@ import "../styles/fonts";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import themeBase from "../theme/theme_base";
-import { ScrollToProvider } from "../context";
+import { ScrollToProvider, TransitionProvider } from "../context";
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={themeBase}>
-      <ScrollToProvider>
-        <Component {...pageProps} />
-      </ScrollToProvider>
+      <TransitionProvider>
+        <ScrollToProvider>
+          <Component {...pageProps} />
+        </ScrollToProvider>
+      </TransitionProvider>
     </ChakraProvider>
   );
 }
