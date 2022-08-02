@@ -1,8 +1,10 @@
-import { createContext, Dispatch, SetStateAction } from "react";
+import { createContext } from "react";
 
 interface Props {
-  navBarTransitionEnd: boolean;
-  setNavBarTransitionEnd: Dispatch<SetStateAction<boolean>>;
+  isNavBarTransitionEnd: boolean;
+  isAboutTransitionEnd: boolean;
+  setIsNavBarTransitionEnd: () => void;
+  setIsAboutTransitionEnd: () => void;
 }
 
 export const TransitionContext = createContext({} as Props);

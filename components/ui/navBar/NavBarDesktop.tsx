@@ -6,7 +6,7 @@ import { TransitionContext } from "../../../context";
 import { NavBarItemParent } from "./NavBarItemParent";
 
 export const NavBarDesktop = () => {
-  const { setNavBarTransitionEnd } = useContext(TransitionContext);
+  const { setIsNavBarTransitionEnd } = useContext(TransitionContext);
 
   return (
     <MotionUnorderedList
@@ -18,7 +18,7 @@ export const NavBarDesktop = () => {
       listStyleType="none"
       overflow="hidden"
       variants={listNavBarDesktop}
-      onAnimationComplete={() => setNavBarTransitionEnd(true)}
+      onAnimationComplete={() => setIsNavBarTransitionEnd()}
     >
       {<NavBarItemParent />}
     </MotionUnorderedList>

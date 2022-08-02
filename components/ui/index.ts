@@ -19,3 +19,5 @@ export * from "./socialIcons";
 export * from "./MyPhoto";
 
 export * from "./navBar";
+
+export * from "./socialSkills";

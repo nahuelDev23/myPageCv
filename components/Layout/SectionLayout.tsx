@@ -1,5 +1,8 @@
-import { Stack } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { ReactNode, useContext } from "react";
+
+import { TransitionContext } from "../../context";
+import { MotionStack } from "../../animations/chakraComponents/MotionStack";
+import { sectionsAppearEffect } from "../../animations";
 
 interface Props {
   reference: any;
@@ -7,9 +10,23 @@ interface Props {
 }
 
 export const SectionLayout = ({ reference, children }: Props) => {
+  const { initial, viewport, whileInView } = sectionsAppearEffect;
+  const { isAboutTransitionEnd } = useContext(TransitionContext);
+
   return (
-    <Stack ref={reference} my="8" scrollMarginTop="24">
-      {children}
-    </Stack>
+    <>
+      {isAboutTransitionEnd && (
+        <MotionStack
+          ref={reference}
+          initial={initial}
+          my="8"
+          scrollMarginTop="24"
+          viewport={viewport}
+          whileInView={whileInView}
+        >
+          {children}
+        </MotionStack>
+      )}
+    </>
   );
 };
