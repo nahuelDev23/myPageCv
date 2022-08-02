@@ -1,7 +1,12 @@
 import { Grid, Stack, Text } from "@chakra-ui/react";
 import { useContext } from "react";
 
-import { DividerPhrases, HeadTitle, Highlighter } from "../ui";
+import {
+  DividerPhrases,
+  HeadTitle,
+  Highlighter,
+  RadarChartSkills,
+} from "../ui";
 import { MyPhoto } from "../ui/";
 import { CurrentTecnologiesList } from "../ui/technologies";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
@@ -100,6 +105,7 @@ export const AboutMe = () => {
                 </Stack>
                 <Stack maxWidth="100%" overflowX="hidden">
                   <MyPhoto />
+                  <RadarChartSkills />
                 </Stack>
               </Grid>
             </MotionBox>

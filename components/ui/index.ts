@@ -21,3 +21,5 @@ export * from "./MyPhoto";
 export * from "./navBar";
 
 export * from "./socialSkills";
+
+export * from "./charts";
