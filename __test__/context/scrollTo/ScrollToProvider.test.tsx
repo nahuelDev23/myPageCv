@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 
-import { ScrollToProvider } from "../../context";
+import { ScrollToProvider } from "../../../context";
 
 import { TestComponent } from "./TestScrollToComponents";
 

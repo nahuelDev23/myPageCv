@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
-import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
-import { NavAction, Section } from "../../interface";
+import { ScrollToContext } from "../../../context/scrollTo/ScrollToContext";
+import { NavAction, Section } from "../../../interface";
 
 export const TestComponent = ({ section }: Section) => {
   const {
