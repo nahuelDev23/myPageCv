@@ -16,7 +16,6 @@ ChartJS.register(
   PointElement,
   LineElement,
   Filler,
-
   Tooltip,
   Legend,
 );
@@ -33,36 +32,36 @@ export const data = {
   ],
 };
 
+const options = {
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+  scales: {
+    r: {
+      suggestedMax: 1,
+      angleLines: {
+        color: "white",
+      },
+      min: 4,
+      grid: {
+        color: "rgba(255, 255, 255, 0.6)",
+        lineWidth: 2,
+      },
+      ticks: {
+        display: false,
+      },
+      pointLabels: {
+        color: "rgba(255, 255, 255, 0.9)",
+        font: {
+          size: 14,
+        },
+      },
+    },
+  },
+};
+
 export const RadarChartSkills = () => {
-  return (
-    <Radar
-      data={data}
-      options={{
-        plugins: {
-          legend: {
-            display: false,
-          },
-        },
-        scales: {
-          r: {
-            suggestedMax: 1,
-            angleLines: {
-              color: "white",
-            },
-            min: 4,
-            grid: {
-              color: "rgba(255, 255, 255, 0.6)",
-              lineWidth: 2,
-            },
-            ticks: {
-              display: false,
-            },
-            pointLabels: {
-              color: "rgba(255, 255, 255, 0.9)",
-            },
-          },
-        },
-      }}
-    />
-  );
+  return <Radar data={data} options={options} />;
 };
