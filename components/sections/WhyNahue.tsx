@@ -1,4 +1,4 @@
-import { Grid, Heading, Stack, Text } from "@chakra-ui/react";
+import { Grid, Stack } from "@chakra-ui/react";
 import { useContext } from "react";
 
 import { ScrollToContext } from "../../context";
