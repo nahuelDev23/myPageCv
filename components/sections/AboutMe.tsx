@@ -7,7 +7,7 @@ import {
   Highlighter,
   RadarChartSkills,
 } from "../ui";
-import { MyPhoto } from "../ui/";
+// import { MyPhoto } from "../ui/";
 import { CurrentTecnologiesList } from "../ui/technologies";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
 import { TransitionContext } from "../../context";
