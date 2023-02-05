@@ -49,7 +49,7 @@
     {
       "title": "MileVeggie",
       "description": "Desarrollo FullStack - Blog de recetas veganas. Este fue mi primer proyecto usando Next.js.En este proyecto tuve la oportunidad de crear un sistema de login usando JWT,hacer un crud completo con paginación e imports dinámicos.",
-      "urlDeploy": "https://mileveggie.com/",
+      "urlDeploy": "https://mileveggie.vercel.app/",
       "urlGit": "",
       "technologies": [
         {
