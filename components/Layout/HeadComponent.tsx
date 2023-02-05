@@ -9,8 +9,8 @@ interface Props {
 
 export const HeadComponent: FC<Props> = ({ metadata }) => {
   const SEO = {
-    title: metadata?.title || "Default title",
-    description: metadata?.description || "Description",
+    title: metadata?.title || "Nahue for sale - Personal web page.",
+    description: metadata?.description || "Here you will find details about me and my experience in the world of fullstack web development",
     slug: metadata?.slug || "",
     // image: `https://website-carlosazaustre.vercel.app${metadata.image || '/assets/default-image.png'}`,
     date: metadata?.date || new Date().toISOString(),
