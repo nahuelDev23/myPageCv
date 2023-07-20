@@ -1,4 +1,4 @@
-# Extend themes chakra
+# Extend themes chakra!
 
 https://chakra-ui.com/docs/styled-system/customize-theme
 https://www.chartjs.org/docs/latest/axes/radial/
