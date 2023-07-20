@@ -11,7 +11,12 @@ export const MyPhoto = () => {
   return (
     <Stack>
       {viewportRef && (
-        <Stack ref={viewportRef} maxW="100vw" overflow="hidden">
+        <Stack
+          ref={viewportRef}
+          display={{ base: "none", md: "flex" }}
+          maxW="100vw"
+          overflow="hidden"
+        >
           <Stack direction="row">
             {pictures.map(({ url }: { url: string }, index: number) => (
               <Stack
