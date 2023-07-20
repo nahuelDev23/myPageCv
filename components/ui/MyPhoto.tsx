@@ -12,10 +12,10 @@ export const MyPhoto = () => {
         viewportRef && (
           <Stack ref={viewportRef} maxW="100vw" overflow="hidden">
             <Stack direction="row">
-              {pictures.map(({ url }: string, index: number) => (
+              {pictures.map(({ url }: { url: string }, index: number) => (
                 <Stack
-                  key={url + index}
                   aria-label="pictures of nahueldev23"
+                  key={url + index}
                   flexBasis="100%"
                   flexGrow="0"
                   flexShrink="0"
