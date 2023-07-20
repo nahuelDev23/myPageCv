@@ -108,7 +108,7 @@ export const AboutMe = () => {
                   maxWidth="100%"
                   overflowX="hidden"
                 >
-                  <MyPhoto />
+                  {/* <MyPhoto /> */}
                   <RadarChartSkills />
                 </Stack>
               </Grid>
