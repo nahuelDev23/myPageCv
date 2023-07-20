@@ -7,7 +7,6 @@ import {
   Highlighter,
   RadarChartSkills,
 } from "../ui";
-
 import { MyPhoto } from "../ui/";
 import { CurrentTecnologiesList } from "../ui/technologies";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
@@ -104,7 +103,11 @@ export const AboutMe = () => {
 
                   <CurrentTecnologiesList />
                 </Stack>
-                <Stack maxWidth="100%" overflowX="hidden" display={{ base: "none", md: "flex" }}>
+                <Stack
+                  display={{ base: "none", md: "flex" }}
+                  maxWidth="100%"
+                  overflowX="hidden"
+                >
                   <MyPhoto />
                   <RadarChartSkills />
                 </Stack>
