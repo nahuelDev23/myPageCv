@@ -7,7 +7,8 @@ import {
   Highlighter,
   RadarChartSkills,
 } from "../ui";
-// import { MyPhoto } from "../ui/";
+
+import { MyPhoto } from "../ui/";
 import { CurrentTecnologiesList } from "../ui/technologies";
 import { ScrollToContext } from "../../context/scrollTo/ScrollToContext";
 import { TransitionContext } from "../../context";
@@ -37,7 +38,7 @@ export const AboutMe = () => {
                 gap="8"
                 gridTemplateColumns={{
                   base: "repeat(1,1fr)",
-                  sm: "repeat(2,1fr)",
+                  md: "repeat(2,1fr)",
                 }}
               >
                 <Stack>
@@ -103,8 +104,8 @@ export const AboutMe = () => {
 
                   <CurrentTecnologiesList />
                 </Stack>
-                <Stack maxWidth="100%" overflowX="hidden">
-                  {/* <MyPhoto /> */}
+                <Stack maxWidth="100%" overflowX="hidden" display={{ base: "none", md: "flex" }}>
+                  <MyPhoto />
                   <RadarChartSkills />
                 </Stack>
               </Grid>
